@@ -1,0 +1,88 @@
+39:48
+South entrance:940:219
+Business Extension:785:210
+Business BUS:754:229
+BZU Museum:698:248
+Main Library LIB:615:289
+Graduate Student:685:281
+University Clinic:613:327
+Faculty Of Science SCI:482:391
+West entrance:283:524
+Kamal Nasir KNH:491:272
+Finance:386:341
+Finance cross road:354:317
+Registration building:456:272
+Faculty Of Engineering ENG:296:330
+General Stores1:77:387
+General Stores2:103:444
+Small playground:95:262
+Basketball court:95:172
+Faculty Of Arts ART:192:123
+Faculty Of Health Professions NHP:276:93
+Naseeb Shaheen NSA:392:41
+Media development center:350:73
+Khoury:390:80
+Women Studies:341:97
+GYM:275:188
+Faculty Of Literature:321:127
+Students rest:294:232
+Student Council:308:254
+Engineering Workshops:276:278
+Palestinian Museum:322:23
+IT entrance:445:26
+Faculty Of IT TEC:452:49
+Zeenni:462:63
+Faculty Of Education EDU:457:88
+Faculty of General Administration:445:117
+Water Reservoir:545:100
+ADM-B:574:149
+BANK/BOOKSTORE/SHINI:418:163
+Law Building IOL:450:216
+South entrance:Business Extension:197
+Business Extension:Business BUS:20
+Business Extension:Kamal Nasir KNH:185
+Business BUS:BZU Museum:40
+BZU Museum:Main Library LIB:62
+BZU Museum:Graduate Student:30
+Main Library LIB:University Clinic:32
+University Clinic:Faculty Of Science SCI:70
+Faculty Of Science SCI:West entrance:88
+West entrance:General Stores2:65
+General Stores2:General Stores1:35
+General Stores1:Small playground:130
+Small playground:Basketball court:130
+Basketball court:Faculty Of Arts ART:77
+Faculty Of Arts ART:Faculty Of Health Professions NHP:85
+Faculty Of Health Professions NHP:Palestinian Museum:125
+Faculty Of Health Professions NHP:Naseeb Shaheen:117
+Palestinian Museum:Naseeb Shaheen:152
+Faculty Of Health Professions NHP:Media development center:60
+Media development center:Khoury:25
+Khoury:Women Studies:20
+Media development center:Women Studies:40
+Women Studies:Faculty Of Literature:91
+Faculty Of Literature:GYM:37
+GYM:Students rest:85
+Students rest:Engineering Workshops:42
+Engineering Workshops:Faculty Of Engineering ENG:42
+Faculty Of Engineering ENG:West entrance:86
+Faculty Of Engineering ENG:Finance cross road:14
+Finance cross road:Finance:29
+Finance cross road:Registration building:80
+Registration building:Kamal Nasir KNH:15
+Faculty Of Science SCI:Kamal Nasir KNH:70
+Finance:Faculty Of Science SCI:57
+Registration building:Law Building IOL:45
+Kamal Nasir KNH:Law Building IOL:43
+Law Building IOL:Student Council:50
+Student Council:BANK/BOOKSTORE/SHINI:46
+BANK/BOOKSTORE/SHINI:ADM-B:101
+ADM-B:Water Reservoir:132
+BANK/BOOKSTORE/SHINI:Faculty of General Administration:62
+Faculty of General Administration:Faculty Of Education EDU:62
+Faculty Of Education EDU:Zeenni:65
+Zeenni:Faculty Of IT TEC:40
+Faculty Of IT TEC:IT entrance:70
+Faculty Of IT TEC:Naseeb Shaheen:50
+IT entrance:Naseeb Shaheen:62
+Naseeb Shaheen:Media development center:80
