@@ -7,37 +7,33 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
 
-public class LED {
+public class Source {
 
-    private boolean lighted=false;
-
-    private int ledNumber;
+    private int resourceNumber;
     private double longitude;
-    private double latitude; //fixed (250)
+    private double latitude; //fixed (1100)
     static private double oldLongitude=100;
     private RadioButton radioButton = new RadioButton();        ///////////////////
     private ToggleGroup group;
 
 
-    public LED() {
+    public Source() {
         // TODO Auto-generated constructor stub
     }
 
-    public LED(int ledNumber) {
+    public Source(int resourceNumber) {
 
         double newLongitude=oldLongitude+100;
         oldLongitude=oldLongitude+100;
 
-        this.ledNumber = ledNumber;
-        this.latitude = 250;
+        this.resourceNumber = resourceNumber;
+        this.latitude = 1100;
         this.longitude=newLongitude;
-
 
         radioButton.setToggleGroup(group);
         radioButton.setPadding(new Insets(-7.5));
@@ -50,72 +46,41 @@ public class LED {
         Color backgroundColor = Color.BLACK;
         gc.setFill(backgroundColor);
 
-        Image img=  new Image("H:\\.BZU MAIN\\.BZU\\.BZU.OLD\\3.2\\COMP336\\COMP336_3 RESOURCES\\led (1).png");
+        Image img=  new Image("H:\\.BZU MAIN\\.BZU\\.BZU.OLD\\3.2\\COMP336\\COMP336_3 RESOURCES\\location-pin (1).png");
 
         gc.drawImage(img, 0, 0);
 
         gc.setFont(Font.font(32));
 
         // Use Text to calculate text width
-        Text text = new Text(String.valueOf(ledNumber));
+        Text text = new Text(String.valueOf(resourceNumber));
         text.setFont(gc.getFont()); // Set the font for the Text to match the GraphicsContext font
         double textWidth = text.getLayoutBounds().getWidth();
 
         double x = (canvas.getWidth() - textWidth) / 2;
         double y = (canvas.getHeight() + gc.getFont().getSize()) / 2;
 
-        gc.fillText(String.valueOf(ledNumber), x, y);
+        gc.fillText(String.valueOf(resourceNumber), x, y);
 
         radioButton.setGraphic(canvas);
 
-//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
 //        String toParse=(this.getResourceNumber()).to
-        Tooltip tip = new Tooltip(""+this.getLedNumber());
+        Tooltip tip = new Tooltip(""+this.getResourceNumber());
         tip.setFont(new Font(16));
 
         tip.setStyle("-fx-background-color:grey;");
         tip.setShowDelay(Duration.seconds(0));
         radioButton.setTooltip(tip);
-
-//        radioButton.setOnAction(o -> {
-//            if (Main.numOfPointChoice == 0) {
-//                ImageView vi0 = new ImageView(new Image("H:\\.BZU MAIN\\.BZU\\.BZU.OLD\\3.2\\COMP336\\COMP336_3 RESOURCES\\location-pin.png"));
-//                vi0.setFitHeight(16);
-//                vi0.setFitWidth(16);
-//                radioButton.setGraphic(vi0);
-//            }
-//
-//            if (Main.numOfPointChoice == 1) {
-//                ImageView vi0 = new ImageView(new Image("H:\\.BZU MAIN\\.BZU\\.BZU.OLD\\3.2\\COMP336\\COMP336_3 RESOURCES\\location-pin (2).png"));
-//                vi0.setFitHeight(16);
-//                vi0.setFitWidth(16);
-//                radioButton.setGraphic(vi0);
-//            }
-//            radioButton.setSelected(true);
-//            Main.numOfPointChoice += 1;
-//            if (Main.numOfPointChoice == 2) {
-//                Main.lock();
-//            }
-//
-////			if (Main.click.isSelected()) {
-//            if (Main.numOfPointChoice == 2) {
-//                Main.targetCombo.getSelectionModel().select(getLedNumber());
-//            }
-//            if (Main.numOfPointChoice == 1) {
-//                Main.sourceCombo.getSelectionModel().select(getLedNumber());
-//            }
-////			}
-//
-//        });
-        /////////////////////////////////////////////////
+        
     }
 
-    public int getLedNumber() {
-        return ledNumber;
+    public int getResourceNumber() {
+        return resourceNumber;
     }
 
-    public void setLedNumber(int ledNumber) {
-        this.ledNumber = ledNumber;
+    public void setResourceNumber(int resourceNumber) {
+        this.resourceNumber = resourceNumber;
     }
 
     public double getLongitude() {
@@ -150,18 +115,37 @@ public class LED {
         this.group = group;
     }
 
+//	@Override
+//	public String compareTo(College compareCol) {
+//		String compareName		= ((College)compareCol).getName();
+//
+//
+//		//  For Ascending order
+//		return compareName;
+//
+//
+//	}
 
-    public boolean isLighted() {
-        return lighted;
-    }
 
-    public void setLighted(boolean lighted) {
-        this.lighted = lighted;
-    }
+//	public double getX() {
+//		return latitude;
+//	}
+//
+//	public void setX(double x) {
+//		this.x = x;
+//	}
+//
+//	public double getY() {
+//		return longitude;
+//	}
+//
+//	public void setY(double y) {
+//		this.y = y;
+//	}
 
     @Override
     public String toString() {
-        return "{  @\t" + ledNumber +"\t@  }";
+        return "{" + resourceNumber + '}';
     }
     static public void resetOldLongitude(){
         oldLongitude=100;
